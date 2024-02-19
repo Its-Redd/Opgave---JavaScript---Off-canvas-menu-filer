@@ -9,18 +9,20 @@ body {
   background-color: hsl(0, 0%, 50%);
 }
 
-#navigation {
-  display: flex;
-  justify-content: center;
-  background-color: hsl(0, 0%, 10%);
-}
+@media screen and (min-width: 768px) {
+  #navigation {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 10%);
+  }
 
-#navigation li {
-  list-style: none;
-}
+  #navigation li {
+    list-style: none;
+  }
 
-#navigation li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.6rem;
+  #navigation li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
 }
