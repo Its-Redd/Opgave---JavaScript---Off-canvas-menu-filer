@@ -35,6 +35,15 @@ body {
   font-size: 1.6rem;
 }
 
+/* * Menu Styling */
+#menu-icon {
+}
+
+#menu-icon img {
+  width: 5rem;
+  height: 5rem;
+}
+
 @media screen and (min-width: 768px) {
   #navigation {
     display: flex;
