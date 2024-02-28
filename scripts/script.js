@@ -1,8 +1,15 @@
 // Hamburgermenu variables
+
+// This is legit the best JavaScript I've ever written. I'm so proud of this. It's so clean and simple. I love it 🔥🔥🍕🤓🔥
 let crossIcon = '../img/times-solid.svg';
 let hamburgerIcon = '../img/bars-solid.svg';
 let nav = document.querySelector('#navigation');
 let hamburgerMenu = document.querySelector('#hamburgermenu');
+
+// Submenu variables
+let submenubtn = document.querySelector('#submenu-btn');
+let submenu = document.querySelector('#submenu');
+let arrow = document.querySelector('#arrow');
 
 // hamburger eventlistener for opening and closing the menu on mobile devices and changing the icon from hamburger to cross and vice versa when the menu is opened or closed
 hamburgerMenu.addEventListener('click', () => {
@@ -10,6 +17,8 @@ hamburgerMenu.addEventListener('click', () => {
     console.log('Menu closed');
     nav.classList.remove('slide-in');
     nav.classList.add('slide-out');
+    submenubtn.classList.remove('open');
+    submenu.classList.remove('show');
     setTimeout(() => {
       nav.classList.remove('show');
     }, 500);
@@ -25,11 +34,6 @@ hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.src = crossIcon;
   }
 });
-
-// Submenu variables
-let submenubtn = document.querySelector('#submenu-btn');
-let submenu = document.querySelector('#submenu');
-let arrow = document.querySelector('#arrow');
 
 // Submenu eventlistener for opening and closing the submenu on mobile devices
 submenubtn.addEventListener('click', () => {
