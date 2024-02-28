@@ -48,10 +48,27 @@ nav {
   padding: 2rem 4rem;
 }
 
-#navigation li a {
+#navigation li > a {
   color: white;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 1.6rem;
+}
+
+/* Submenu Styling */
+span#arrow {
+  width: 20px;
+  height: 20px;
+  background-color: hsl(0, 0%, 50%);
+}
+
+#showsubmenu {
+  width: 100%;
+}
+
+#showsubmenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 /* * Animation */
