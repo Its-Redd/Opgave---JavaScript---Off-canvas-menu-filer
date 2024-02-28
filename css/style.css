@@ -56,13 +56,37 @@ nav {
 
 /* Submenu Styling */
 span#arrow {
+  display: flex;
+  position: relative;
+  top: 5%;
+  left: 40%;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
   width: 20px;
   height: 20px;
   background-color: hsl(0, 0%, 50%);
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
 }
 
 #showsubmenu {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+
+#showsubmenu > a {
+  width: 100%;
+  position: relative;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#showsubmenu ul {
+  display: none;
+  flex-direction: column;
+  align-items: center;
 }
 
 #showsubmenu ul li a {
@@ -114,6 +138,14 @@ span#arrow {
 
 #navigation.show {
   display: flex;
+}
+
+#showsubmenu ul.show {
+  display: flex;
+}
+
+#arrow.open {
+  transform: rotate(-90deg);
 }
 
 /* * Media Queries / Desktop Styling */
