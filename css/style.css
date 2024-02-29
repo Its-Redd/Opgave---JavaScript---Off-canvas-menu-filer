@@ -158,6 +158,8 @@ span#arrow {
   nav {
     justify-content: center;
     background-color: hsl(0, 0%, 10%);
+    position: relative;
+    z-index: 100;
   }
 
   #menu-icon {
@@ -185,5 +187,61 @@ span#arrow {
   #navigation li a:hover {
     color: hsl(0, 0%, 50%);
     font-weight: bold;
+  }
+
+  span#arrow {
+    display: none;
+  }
+
+  #showsubmenu {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+
+  #showsubmenu ul {
+    position: absolute;
+    left: 33%;
+    top: 100%;
+    background-color: hsl(0, 0%, 10%);
+  }
+
+  .slide-down {
+    animation: slide-down 0.5s forwards;
+  }
+
+  .slide-up {
+    animation: slide-up 0.5s forwards;
+  }
+
+  @keyframes slide-down {
+    0% {
+      display: none;
+      transform: translateY(-100%);
+    }
+
+    1% {
+      display: flex;
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-up {
+    0% {
+      transform: translateY(0);
+    }
+
+    99% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      display: none;
+      transform: translateY(-100%);
+    }
   }
 }

@@ -43,6 +43,7 @@ submenubtn.addEventListener('click', () => {
     submenu.classList.remove('show');
   } else {
     console.log('Submenu opened');
+    submenu.classList.add('slide-down');
     submenu.classList.add('show');
     arrow.classList.add('open');
   }
