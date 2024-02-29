@@ -1,6 +1,4 @@
 // Hamburgermenu variables
-
-// This is legit the best JavaScript I've ever written. I'm so proud of this. It's so clean and simple. I love it 🔥🔥🍕🤓🔥
 let crossIcon = '../img/times-solid.svg';
 let hamburgerIcon = '../img/bars-solid.svg';
 let nav = document.querySelector('#navigation');
